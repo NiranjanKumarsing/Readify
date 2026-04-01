@@ -1,0 +1,117 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.h {
+  padding: 15px;
+  text-align: center;
+  font-size: 26px;
+  background: #000;
+}
+.f {
+  padding: 20px;
+  text-align: center;
+  background: #000;
+  font-size: 14px;
+}
+.s {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px;
+}
+input {
+  padding: 10px;
+  width: 220px;
+}
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+.c {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 15px;
+  flex: 1;
+}
+.b {
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.b:hover {
+  transform: scale(1.1);
+}
+img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.t {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+h4 {
+  font-size: 14px;
+  margin: 5px 0;
+}
+p {
+  font-size: 12px;
+  margin: 2px 0;
+}
+/* responsive tweaks */
+@media (max-width: 768px) {
+  .s {
+    flex-direction: column;
+    align-items: center;
+  }
+  input {
+    width: 90%;
+  }
+  button {
+    width: 90%;
+  }
+  .c {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .h {
+    font-size: 20px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .c {
+    grid-template-columns: 1fr 1fr;
+  }
+  img {
+    height: 120px;
+  }
+  h4 {
+    font-size: 13px;
+  }
+  p {
+    font-size: 11px;
+  }
+}
