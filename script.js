@@ -60,11 +60,11 @@ function render(arr) {
   c.innerHTML = "";
 
   if (arr.length === 0) {
-    msg.innerHTML = showFav ? "💔 No favourites" : "📭 No results";
+    msg.innerHTML = showFav ? "No favourites" : "No results";
     return;
   }
 
-  msg.innerHTML = showFav ? "❤️ Showing Favorites" : "";
+  msg.innerHTML = showFav ? "Showing Favorites" : "";
 
   arr.forEach((bk) => {
     let info = bk.volumeInfo || {};
