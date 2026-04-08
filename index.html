@@ -1,55 +1,69 @@
 <!doctype html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Readify</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav
-      style="
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background: #000;
-      "
-    >
-      <div
-        id="l"
-        style="display: flex; align-items: center; gap: 10px; cursor: pointer"
-      >
-        <img
-          src=""
-          alt="logo"
-          style="height: 30px; width: 30px; object-fit: contain"
-        />
-        <div style="font-weight: bold">Readify</div>
-      </div>
-      <div style="display: flex; gap: 15px">
-        <a href="#">Home</a>
-        <a href="#">Browse</a>
-        <a href="#">Categories</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </div>
-    </nav>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Readify</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
 
-    <div class="h">Bookify - Discover Books Easily</div>
-    <div class="t">
-      Search for your favorite books, explore trending reads, and discover new
-      authors.
-    </div>
+<body>
 
-    <div class="s">
-      <input id="i" placeholder="search books" />
-      <button id="b" type="button">Search</button>
-    </div>
+<header>
+<b>📚 Readify</b>
+<span onclick="goHome()">Home</span>
+</header>
 
-    <div id="c" class="c"></div>
+<div class="searchBox">
+<input id="i" placeholder="Search books..."/>
+<button id="b">Search</button>
+</div>
 
-    <div class="f">© 2026 Bookify | Google Books API</div>
+<div class="controls">
 
-    <script src="script.js"></script>
-  </body>
+<select id="cat">
+<option value="all">Category</option>
+<option value="fiction">Fiction</option>
+<option value="technology">Technology</option>
+<option value="business">Business</option>
+<option value="history">History</option>
+<option value="science">Science</option>
+</select>
+
+<select id="f1">
+<option value="all">Filter</option>
+<option value="free">Free</option>
+<option value="paid">Paid</option>
+</select>
+
+<select id="r1">
+<option value="all">Rating</option>
+<option value="4">4+</option>
+<option value="3">3+</option>
+</select>
+
+<select id="s1">
+<option value="none">Sort</option>
+<option value="az">A-Z</option>
+<option value="za">Z-A</option>
+</select>
+
+</div>
+
+<div class="side">
+<button id="favToggle">❤</button>
+<button id="homeBtn">🏠</button>
+</div>
+
+<div id="c" class="c"></div>
+<div id="msg" class="msg"></div>
+
+<footer>
+© 2026 Readify • Discover Your Next Book 📖
+</footer>
+
+<script src="script.js">
+
+</script>
+
+</body>
 </html>
